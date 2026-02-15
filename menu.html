@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | DENA'S Persian Fusion Restaurant</title>
+  <meta name="description" content="Explore our menu of Persian-inspired seafood and grilled specialties. Fresh ingredients, authentic flavors.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="images/logo.png" alt="DENA Logo" style="height: 40px;"></a>
+      
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="nav-cta">
+          <a href="https://widget.thefork.com/nl/5a76bdd4-58eb-4e8d-a86a-f507cf6e895b?step=date" target="_blank" class="btn btn-outline-light">Book a table</a>
+          <a href="https://ubereats.com/nl/store/dena/peMmkNp3SySgoK-oHsEBVA?diningMode=PICKUP&mod=gdprAdsConsent&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjIyNzIlMjBYQiUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpjYzJrOTdpM3hVY1IyV2dlQlljSGxlOCUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E1Mi4wODEyNzU1JTJDJTIybG9uZ2l0dWRlJTIyJTNBNC4zNzA2NzI5JTdE&ps=1" target="_blank" class="btn btn-primary">Order online</a>
+        </div>
+        
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <span>☰</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Menu Hero -->
+  <section class="menu-hero">
+    <div class="container" style="position: relative; z-index: 1;">
+      <div class="section-header" style="padding-top: 2rem;">
+        <h2 style="color: var(--color-accent);">Our Menu</h2>
+        <p style="color: var(--color-accent); opacity: 0.8;">Discover our Persian-inspired seafood and grilled specialties</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Filters -->
+  <div class="menu-filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="lunch">Lunch</button>
+    <button class="filter-btn" data-filter="dinner">Dinner</button>
+    <button class="filter-btn" data-filter="desserts">Desserts</button>
+    <button class="filter-btn" data-filter="drinks">Drinks</button>
+  </div>
+
+  <!-- Menu Section -->
+  <section class="menu-section bg-cream">
+    <div class="container">
+      
+      <!-- Lunch Category -->
+      <div class="menu-category" data-category="lunch">
+        <h2>Lunch</h2>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>DENA's Breakfast Sandwich</h4>
+              <span class="menu-tag">Breakfast</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€10.50</span>
+          </div>
+          <p class="menu-item-description">Avocado, egg and fresh tomato served on toast</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Salmon Sandwich</h4>
+              <span class="menu-tag">Sandwich</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€8.50</span>
+          </div>
+          <p class="menu-item-description">Smoked salmon with dill</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Chicken Sandwich</h4>
+              <span class="menu-tag">Sandwich</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€9.50</span>
+          </div>
+          <p class="menu-item-description">Grilled chicken on a bed of lettuce with a side salad</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Fish Sandwich</h4>
+              <span class="menu-tag">Sandwich</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€10.50</span>
+          </div>
+          <p class="menu-item-description">Grilled fish served in a toasted sandwich</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Turkey Sandwich</h4>
+              <span class="menu-tag">Sandwich</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€8.50</span>
+          </div>
+          <p class="menu-item-description">Freshly sliced turkey served in a toasted sandwich</p>
+        </div>
+      </div>
+
+      <!-- Dinner Category -->
+      <div class="menu-category" data-category="dinner">
+        <h2>Dinner</h2>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Soup of the Day</h4>
+              <span class="menu-tag">Soup</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€10.50</span>
+          </div>
+          <p class="menu-item-description">Different soups depending on the day, see lunch menu</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Kotlet</h4>
+              <span class="menu-tag">Appetizer</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€8.50</span>
+          </div>
+          <p class="menu-item-description">Meat, vegetable and potato patty pan fried to a perfect crisp</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Kuku Sabzi</h4>
+              <span class="menu-tag">Appetizer</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€8.50</span>
+          </div>
+          <p class="menu-item-description">Spinach quiche with eggs, walnuts and herbs, served with yogurt</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Fish Tartare</h4>
+              <span class="menu-tag">Appetizer</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€12.50</span>
+          </div>
+          <p class="menu-item-description">Finely diced fresh salmon or tuna mixed with various sauces and seasonings</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Fesenjoon</h4>
+              <span class="menu-tag">Main</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€28.00</span>
+          </div>
+          <p class="menu-item-description">Walnut stew made with duck breast, ground walnuts and pomegranate molasses</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Baghali Polo</h4>
+              <span class="menu-tag">Main</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€37.50</span>
+          </div>
+          <p class="menu-item-description">Rice mixed with fava beans and dill, served with lamb topped with caramelized onions</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Khoresh Bademjan</h4>
+              <span class="menu-tag">Main</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€27.50</span>
+          </div>
+          <p class="menu-item-description">Persian lamb stew made with eggplants, tomatoes and veal</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Zereshk Polo</h4>
+              <span class="menu-tag">Main</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€29.00</span>
+          </div>
+          <p class="menu-item-description">Persian dish made with saffron spiced jeweled rice, topped with barberries, served with half chicken and oranges</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Oven Grilled Fish</h4>
+              <span class="menu-tag">Signature</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€37.50</span>
+          </div>
+          <p class="menu-item-description">Plate of fresh oven grilled fish served with either rice or potatoes and vegetables of choice</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Ghormeh Sabzi</h4>
+              <span class="menu-tag">Signature</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€29.00</span>
+          </div>
+          <p class="menu-item-description">Persian herb stew made with sauteed herbs, lamb and beans</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Chef's Special</h4>
+              <span class="menu-tag">Signature</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">Price on request</span>
+          </div>
+          <p class="menu-item-description">Homecooked meal of the week</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Torshi</h4>
+              <span class="menu-tag">Side</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€5.50</span>
+          </div>
+          <p class="menu-item-description">Pickled vegetables</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Mast O'Moosir</h4>
+              <span class="menu-tag">Side</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€6.50</span>
+          </div>
+          <p class="menu-item-description">Yogurt made with special garlic, dill and shallots, served with bread</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Mast-o Khiar</h4>
+              <span class="menu-tag">Side</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€6.00</span>
+          </div>
+          <p class="menu-item-description">Yogurt with cucumber and Persian spices</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Persian Salad</h4>
+              <span class="menu-tag">Side</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.50</span>
+          </div>
+          <p class="menu-item-description">Cucumber, onion, tomato, mint, topped with lemon</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Olive and Pomegranate Salad</h4>
+              <span class="menu-tag">Side</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€7.00</span>
+          </div>
+          <p class="menu-item-description">Freshly made salad made with olives, pomegranate and walnuts</p>
+        </div>
+      </div>
+
+      <!-- Desserts Category -->
+      <div class="menu-category" data-category="desserts">
+        <h2>Desserts</h2>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Warm Pear with Blue Cheese</h4>
+              <span class="menu-tag">Dessert</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€10.90</span>
+          </div>
+          <p class="menu-item-description">Pear baked in the oven, infused with red wine, served with fruits and blue cheese</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Oven Baked Fruit with Cinnamon and Honey</h4>
+              <span class="menu-tag">Dessert</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€8.50</span>
+          </div>
+          <p class="menu-item-description">Fruit baked in the oven topped with cinnamon, honey and almonds</p>
+        </div>
+      </div>
+
+      <!-- Drinks Category -->
+      <div class="menu-category" data-category="drinks">
+        <h2>Drinks</h2>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Various Tea</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.85</span>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Espresso</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.00</span>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Cappuccino</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.50</span>
+          </div>
+          <p class="menu-item-description">Coffee with milk foam</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Americano</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.25</span>
+          </div>
+          <p class="menu-item-description">Coffee and water</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Iced Coffee</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.95</span>
+          </div>
+          <p class="menu-item-description">Iced coffee</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Hot Chocolate</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.95</span>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Still Water</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€2.50</span>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Sparkling Water</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€2.50</span>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Pellegrino</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.25</span>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Acqua Panna</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.25</span>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Coca Cola</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€2.75</span>
+          </div>
+          <p class="menu-item-description">Soft drink</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Fanta</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.50</span>
+          </div>
+          <p class="menu-item-description">Soft drink</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Ice Tea</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.50</span>
+          </div>
+          <p class="menu-item-description">Iced tea</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Arizona</h4>
+              <span class="menu-tag">Beverage</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.75</span>
+          </div>
+          <p class="menu-item-description">Soft drink</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Heineken 5%</h4>
+              <span class="menu-tag">Beer</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.60</span>
+          </div>
+          <p class="menu-item-description">Beer</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Bavaria 5%</h4>
+              <span class="menu-tag">Beer</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€3.60</span>
+          </div>
+          <p class="menu-item-description">Beer</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Saffron Beer 6%</h4>
+              <span class="menu-tag">Beer</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€4.00</span>
+          </div>
+          <p class="menu-item-description">Saffron beer (6%)</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Saffron Beer 0%</h4>
+              <span class="menu-tag">Beer</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€4.00</span>
+          </div>
+          <p class="menu-item-description">Saffron beer (0%)</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Lager 4.5%</h4>
+              <span class="menu-tag">Alcohol</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€4.00</span>
+          </div>
+          <p class="menu-item-description">Lager beer (4.5%)</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Portuguese White Wine</h4>
+              <span class="menu-tag">Wine & spirits</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€5.50 (glass) / €20.00 (bottle)</span>
+          </div>
+          <p class="menu-item-description">White wine</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Portuguese Red Wine</h4>
+              <span class="menu-tag">Wine & spirits</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€5.50 (glass) / €20.00 (bottle)</span>
+          </div>
+          <p class="menu-item-description">Red wine</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Persian Shiraz</h4>
+              <span class="menu-tag">Wine & spirits</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€6.95 (glass) / €25.00 (bottle)</span>
+          </div>
+          <p class="menu-item-description">Shiraz wine</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Sauvignon Blanc</h4>
+              <span class="menu-tag">Wine & spirits</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€6.95 (glass) / €25.00 (bottle)</span>
+          </div>
+          <p class="menu-item-description">Sauvignon Blanc wine</p>
+        </div>
+        
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <div class="menu-item-title">
+              <h4>Pomegranate Liqueur</h4>
+              <span class="menu-tag">Wine & spirits</span>
+            </div>
+            <span class="menu-item-dots"></span>
+            <span class="menu-item-price">€6.95 (glass) / €25.00 (bottle)</span>
+          </div>
+          <p class="menu-item-description">Pomegranate liqueur</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 style="color: #F6DB96;">DENA'S Persian Fusion Restaurant</h3>
+          <p class="tagline">Persian culture, shared around one table.</p>
+          <address>
+            Prinsestraat 62<br>
+            2513 CE Den Haag<br>
+            Netherlands
+          </address>
+        </div>
+        
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li><a href="catering.html">Catering</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>06 27481111</p>
+          <p>info@dena-restaurant.com</p>
+          <a href="https://ubereats.com/nl/store/dena/peMmkNp3SySgoK-oHsEBVA?diningMode=PICKUP&mod=gdprAdsConsent&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjIyNzIlMjBYQiUyMiUyQyUyMnJlZmVyZW5jZSUyMiUzQSUyMkNoSUpjYzJrOTdpM3hVY1IyV2dlQlljSGxlOCUyMiUyQyUyMnJlZmVyZW5jZVR5cGUlMjIlM0ElMjJnb29nbGVfcGxhY2VzJTIyJTJDJTIybGF0aXR1ZGUlMjIlM0E1Mi4wODEyNzU1JTJDJTIybG9uZ2l0dWRlJTIyJTNBNC4zNzA2NzI5JTdE&ps=1" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">Order online</a>
+          
+          <h4 style="margin-top: 1.5rem;">Follow Us</h4>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/dena.restaurant/" target="_blank" aria-label="Instagram">
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 DENA'S Persian Fusion Restaurant. All rights reserved.</p>
+        <p><em>Come hungry. Leave like family.</em></p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">The Happy Food Services B.V<br>KvK: 96854197</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
