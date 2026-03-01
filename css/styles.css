@@ -1414,6 +1414,16 @@ section {
   margin: 0 0.5rem;
 }
 
+.blog-cta-block .btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+.blog-cta-block .btn-outline-light:hover {
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
 /* Related Posts */
 .blog-related {
   background-color: var(--color-cream-light);
