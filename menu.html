@@ -74,7 +74,252 @@
     "sameAs": ["https://www.instagram.com/dena.restaurant/"],
     "founder": { "@type": "Person", "name": "Dena" },
     "legalName": "The Happy Food Services B.V.",
-    "taxID": "96854197"
+    "taxID": "96854197",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+31627481111",
+      "email": "info@dena-restaurant.com",
+      "contactType": "reservations",
+      "availableLanguage": ["English", "Dutch", "Persian"],
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "22:00"
+      }
+    }
+  }
+  </script>
+
+  <!-- Schema.org: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dena-restaurant.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Menu",
+        "item": "https://dena-restaurant.com/menu.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Schema.org: Menu + MenuItem -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Menu",
+    "name": "DENA'S Persian Fusion Restaurant Menu",
+    "url": "https://dena-restaurant.com/menu.html",
+    "inLanguage": "en",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Lunch",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "DENA's Breakfast Sandwich",
+            "description": "Persian-style breakfast sandwich with eggs and fresh herbs",
+            "offers": { "@type": "Offer", "price": "10.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Salmon Sandwich",
+            "description": "Fresh salmon sandwich on house bread",
+            "offers": { "@type": "Offer", "price": "8.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Chicken Sandwich",
+            "description": "Persian-spiced chicken sandwich",
+            "offers": { "@type": "Offer", "price": "9.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Fish Sandwich",
+            "description": "Fresh fish sandwich on house bread",
+            "offers": { "@type": "Offer", "price": "10.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Turkey Sandwich",
+            "description": "Turkey sandwich with Persian condiments",
+            "offers": { "@type": "Offer", "price": "8.50", "priceCurrency": "EUR" }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Dinner Starters",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Soup of the Day",
+            "description": "Fresh daily soup made with seasonal ingredients",
+            "offers": { "@type": "Offer", "price": "10.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Kotlet",
+            "description": "Traditional Persian meat patty — spiced lamb or beef, pan-fried until golden",
+            "offers": { "@type": "Offer", "price": "8.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Kuku Sabzi",
+            "description": "Persian herb frittata packed with fresh green herbs — parsley, dill, fenugreek, and walnuts",
+            "offers": { "@type": "Offer", "price": "8.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Fish Tartare",
+            "description": "Fresh fish tartare with Persian-inspired seasoning",
+            "offers": { "@type": "Offer", "price": "12.50", "priceCurrency": "EUR" }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Dinner Mains",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Fesenjoon",
+            "description": "Classic Persian walnut and pomegranate stew served with duck breast and saffron rice",
+            "offers": { "@type": "Offer", "price": "28.00", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Baghali Polo",
+            "description": "Fava bean and dill rice served with slow-cooked lamb shank",
+            "offers": { "@type": "Offer", "price": "37.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Khoresh Bademjan",
+            "description": "Persian lamb stew with eggplant and tomato, slow-cooked with dried limes and turmeric",
+            "offers": { "@type": "Offer", "price": "27.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Zereshk Polo",
+            "description": "Saffron jeweled rice with barberries, served with chicken in a rich sauce",
+            "offers": { "@type": "Offer", "price": "29.00", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Oven Grilled Fish",
+            "description": "Fresh whole fish grilled in the oven with Persian herbs and spices, served with rice or potatoes",
+            "offers": { "@type": "Offer", "price": "37.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Ghormeh Sabzi",
+            "description": "Iran's most beloved herb stew — parsley, fenugreek, dried limes, kidney beans, slow-cooked with lamb",
+            "offers": { "@type": "Offer", "price": "29.00", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Chef's Special",
+            "description": "DENA's daily chef selection — ask your server for today's dish"
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Sides",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Torshi",
+            "description": "Traditional Persian pickled mixed vegetables",
+            "offers": { "@type": "Offer", "price": "5.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Mast-o Moosir",
+            "description": "Thick Persian yogurt with wild shallots (moosir) and dill",
+            "offers": { "@type": "Offer", "price": "6.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Mast-o Khiar",
+            "description": "Persian yogurt with cucumber, dried rose petals, and fresh mint",
+            "offers": { "@type": "Offer", "price": "6.00", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Persian Salad",
+            "description": "Fresh salad with Persian-style dressing",
+            "offers": { "@type": "Offer", "price": "3.50", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Olive and Pomegranate Salad",
+            "description": "Marinated olives with pomegranate seeds and fresh herbs",
+            "offers": { "@type": "Offer", "price": "7.00", "priceCurrency": "EUR" }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Desserts",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Warm Pear with Blue Cheese",
+            "description": "Oven-warm pear served with Dutch blue cheese — a Dutch-Persian pairing",
+            "offers": { "@type": "Offer", "price": "10.90", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Oven Baked Fruit",
+            "description": "Seasonal fruit baked in the oven with Persian spices",
+            "offers": { "@type": "Offer", "price": "8.50", "priceCurrency": "EUR" }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Drinks",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Saffron Beer (alcoholic)",
+            "description": "House brewed saffron-infused beer, 6% ABV",
+            "offers": { "@type": "Offer", "price": "4.00", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Saffron Beer (alcohol-free)",
+            "description": "House brewed saffron-infused beer, 0% ABV",
+            "offers": { "@type": "Offer", "price": "4.00", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Persian Shiraz (glass)",
+            "description": "Persian-style Shiraz red wine by the glass",
+            "offers": { "@type": "Offer", "price": "6.95", "priceCurrency": "EUR" }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Pomegranate Liqueur",
+            "description": "House pomegranate liqueur, served as a digestif",
+            "offers": { "@type": "Offer", "price": "6.95", "priceCurrency": "EUR" }
+          }
+        ]
+      }
+    ]
   }
   </script>
 
@@ -82,7 +327,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet">
-  
+
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
