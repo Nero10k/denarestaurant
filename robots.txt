@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dena-restaurant.com/sitemap.xml
