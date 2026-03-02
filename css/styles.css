@@ -1060,61 +1060,120 @@ section {
 }
 
 @media (max-width: 768px) {
+
+  /* Anchor for the dropdown panel */
+  .header .container {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  /* Hide nav contents by default */
   .nav-links,
   .nav-cta {
     display: none;
   }
-  
+
+  /* Show hamburger button */
   .mobile-menu-btn {
-    display: block;
-  }
-  
-  .nav.active .nav-links,
-  .nav.active .nav-cta {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
+    z-index: 1001;
+  }
+
+  /* Nav container: static by default, becomes dropdown when active */
+  .nav {
+    position: static;
+  }
+
+  .nav.active {
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     background-color: var(--color-secondary);
-    padding: var(--spacing-md);
+    z-index: 1000;
+    padding: var(--spacing-md) var(--spacing-md) var(--spacing-lg);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
   }
-  
+
+  /* All nav links stacked in a list */
+  .nav.active .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .nav.active .nav-links li {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav.active .nav-links a {
+    display: block;
+    padding: 0.85rem 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  .nav.active .nav-links a::after {
+    display: none;
+  }
+
+  /* CTA buttons stacked below nav links */
+  .nav.active .nav-cta {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  .nav.active .nav-cta .btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.85rem 1rem;
+  }
+
   .hero {
     min-height: 80vh;
     padding-top: calc(60px + var(--spacing-md));
   }
-  
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .two-col {
     grid-template-columns: 1fr;
   }
-  
+
   .two-col-image {
     order: -1;
   }
-  
+
   .footer-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
   }
-  
+
   .info-cards {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .process-steps {
     grid-template-columns: 1fr;
   }
-  
+
   .highlights-cards {
     grid-template-columns: 1fr;
   }
