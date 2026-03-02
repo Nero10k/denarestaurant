@@ -1,0 +1,29 @@
+{
+  "redirects": [
+    {
+      "source": "/menu",
+      "destination": "/menu.html",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/story",
+      "destination": "/story.html",
+      "permanent": true
+    },
+    {
+      "source": "/catering",
+      "destination": "/catering.html",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html",
+      "permanent": true
+    }
+  ]
+}

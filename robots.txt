@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://dena-restaurant.com/sitemap.xml
+
+# AI crawler discovery
+# Short summary: https://dena-restaurant.com/llms.txt
+# Full content: https://dena-restaurant.com/llms-full.txt
