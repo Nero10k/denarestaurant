@@ -24,6 +24,11 @@
       "source": "/contact",
       "destination": "/contact.html",
       "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/blog/index.html",
+      "permanent": true
     }
   ]
 }
