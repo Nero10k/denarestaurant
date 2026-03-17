@@ -458,6 +458,33 @@
     </div>
   </section>
 
+  <!-- Trust Bar -->
+  <div style="background: var(--color-cream); border-top: 3px solid var(--color-primary); border-bottom: 3px solid var(--color-primary); padding: 1.25rem 0;">
+    <div class="container">
+      <div style="display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; text-align: center; align-items: center;">
+        <div>
+          <div style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary);">4.8 / 5</div>
+          <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.2rem;">37 Google reviews</div>
+        </div>
+        <div style="width: 1px; height: 2rem; background: rgba(139,0,0,0.2);"></div>
+        <div>
+          <div style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary);">Dena kookt zelf</div>
+          <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.2rem;">Familiebedrijf, elke dag</div>
+        </div>
+        <div style="width: 1px; height: 2rem; background: rgba(139,0,0,0.2);"></div>
+        <div>
+          <div style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary);">Dagverse vis</div>
+          <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.2rem;">Elke ochtend ingekocht</div>
+        </div>
+        <div style="width: 1px; height: 2rem; background: rgba(139,0,0,0.2);"></div>
+        <div>
+          <div style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary);">Di–Zo open</div>
+          <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.2rem;">Vanaf 11:00 &mdash; vr&ndash;za t/m 22:00</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Menu Filters -->
   <div class="menu-filters">
     <button class="filter-btn active" data-filter="all">All</button>
@@ -539,6 +566,12 @@
       <!-- Dinner Category -->
       <div class="menu-category" data-category="dinner">
         <h2>Dinner</h2>
+
+        <!-- First-timer callout -->
+        <div style="background: var(--color-secondary); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; border-left: 4px solid var(--color-accent);">
+          <p style="color: var(--color-accent); font-weight: 700; margin-bottom: 0.4rem;">For your first visit</p>
+          <p style="color: rgba(246,219,150,0.85); font-size: 0.95rem; line-height: 1.5;">Order the <strong style="color: var(--color-accent);">Ghormeh Sabzi</strong> — it's Iran's national dish and the most-ordered on this menu. If you want something richer and more unusual, the <strong style="color: var(--color-accent);">Fesenjoon</strong> (walnut &amp; pomegranate duck stew) is the one that surprises people most. Pair either with a Saffron Beer.</p>
+        </div>
         
         <div class="menu-item">
           <div class="menu-item-header">
@@ -569,6 +602,7 @@
             <div class="menu-item-title">
               <h4>Kuku Sabzi</h4>
               <span class="menu-tag">Appetizer</span>
+              <span style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid green; color: green; font-weight: 700;">V</span>
             </div>
             <span class="menu-item-dots"></span>
             <span class="menu-item-price">€8.50</span>
@@ -594,6 +628,7 @@
               <div class="menu-item-title">
                 <h4>Fesenjoon</h4>
                 <span class="menu-tag">Main</span>
+                <span style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; background: var(--color-primary); color: white; font-weight: 700; white-space: nowrap;">Most surprising</span>
               </div>
               <span class="menu-item-dots"></span>
               <span class="menu-item-price">€28.00</span>
@@ -666,6 +701,7 @@
               <div class="menu-item-title">
                 <h4>Ghormeh Sabzi</h4>
                 <span class="menu-tag">Signature</span>
+                <span style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; background: var(--color-primary); color: white; font-weight: 700; white-space: nowrap;">Most ordered</span>
               </div>
               <span class="menu-item-dots"></span>
               <span class="menu-item-price">€29.00</span>
@@ -707,6 +743,7 @@
             <div class="menu-item-title">
               <h4>Mast O'Moosir</h4>
               <span class="menu-tag">Side</span>
+              <span style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid green; color: green; font-weight: 700;">V</span>
             </div>
             <span class="menu-item-dots"></span>
             <span class="menu-item-price">€6.50</span>
@@ -719,6 +756,7 @@
             <div class="menu-item-title">
               <h4>Mast-o Khiar</h4>
               <span class="menu-tag">Side</span>
+              <span style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid green; color: green; font-weight: 700;">V</span>
             </div>
             <span class="menu-item-dots"></span>
             <span class="menu-item-price">€6.00</span>
@@ -731,6 +769,7 @@
             <div class="menu-item-title">
               <h4>Persian Salad</h4>
               <span class="menu-tag">Side</span>
+              <span style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid green; color: green; font-weight: 700;">V</span>
             </div>
             <span class="menu-item-dots"></span>
             <span class="menu-item-price">€3.50</span>
@@ -743,6 +782,7 @@
             <div class="menu-item-title">
               <h4>Olive and Pomegranate Salad</h4>
               <span class="menu-tag">Side</span>
+              <span style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid green; color: green; font-weight: 700;">V</span>
             </div>
             <span class="menu-item-dots"></span>
             <span class="menu-item-price">€7.00</span>
@@ -760,6 +800,7 @@
             <div class="menu-item-title">
               <h4>Warm Pear with Blue Cheese</h4>
               <span class="menu-tag">Dessert</span>
+              <span style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid green; color: green; font-weight: 700;">V</span>
             </div>
             <span class="menu-item-dots"></span>
             <span class="menu-item-price">€10.90</span>
@@ -772,6 +813,7 @@
             <div class="menu-item-title">
               <h4>Oven Baked Fruit with Cinnamon and Honey</h4>
               <span class="menu-tag">Dessert</span>
+              <span style="font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; border: 1px solid green; color: green; font-weight: 700;">V</span>
             </div>
             <span class="menu-item-dots"></span>
             <span class="menu-item-price">€8.50</span>
@@ -1066,6 +1108,19 @@
         </div>
       </div>
       
+    </div>
+  </section>
+
+  <!-- Booking CTA -->
+  <section style="background: var(--color-secondary); padding: 3.5rem 0; text-align: center;">
+    <div class="container">
+      <h2 style="color: var(--color-accent); font-size: 1.8rem; margin-bottom: 0.5rem;">Convinced? Come eat with us.</h2>
+      <p style="color: rgba(246,219,150,0.75); margin-bottom: 0.4rem;">Prinsestraat 62, 2513 CE Den Haag</p>
+      <p style="color: rgba(246,219,150,0.6); font-size: 0.9rem; margin-bottom: 2rem;">Tue–Thu &amp; Sun 11:00–19:00 &nbsp;&middot;&nbsp; Fri–Sat 11:00–22:00 &nbsp;&middot;&nbsp; Closed Monday</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://widget.thefork.com/nl/5a76bdd4-58eb-4e8d-a86a-f507cf6e895b?step=date" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="font-size: 1rem; padding: 0.9rem 2rem;">Book a table</a>
+        <a href="https://ubereats.com/nl/store/dena/peMmkNp3SySgoK-oHsEBVA?diningMode=PICKUP" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1rem; padding: 0.9rem 2rem;">Order online</a>
+      </div>
     </div>
   </section>
 
