@@ -359,6 +359,20 @@
 
   <style>
     @media (max-width: 640px) {
+      /* Kill dead space in hero */
+      .menu-hero {
+        min-height: auto !important;
+        padding-bottom: 1.5rem !important;
+      }
+      .menu-hero .section-header {
+        margin-bottom: 0 !important;
+      }
+
+      /* Tighten showcase top padding */
+      .dish-showcase {
+        padding-top: 1.5rem !important;
+      }
+
       /* Dish showcase: 2 columns on mobile */
       .dish-grid {
         grid-template-columns: repeat(2, 1fr) !important;
@@ -449,7 +463,7 @@
   </section>
 
   <!-- Signature Dishes Photo Showcase -->
-  <section style="background: var(--color-secondary); padding: 3rem 0;">
+  <section class="dish-showcase" style="background: var(--color-secondary); padding: 3rem 0;">
     <div class="container">
       <div class="dish-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
 
