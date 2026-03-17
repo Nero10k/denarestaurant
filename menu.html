@@ -356,6 +356,59 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    @media (max-width: 640px) {
+      /* Dish showcase: 2 columns on mobile */
+      .dish-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.75rem !important;
+      }
+      .dish-grid img {
+        height: 160px !important;
+      }
+      .dish-grid h3 {
+        font-size: 0.9rem !important;
+      }
+      .dish-grid p {
+        font-size: 0.78rem !important;
+        margin-bottom: 0.5rem !important;
+      }
+
+      /* Trust bar: hide vertical dividers when wrapping */
+      .trust-divider {
+        display: none;
+      }
+      .trust-bar-inner {
+        gap: 1.25rem !important;
+        justify-content: space-around !important;
+      }
+
+      /* First-timer callout: tighter padding */
+      .firsttimer-callout {
+        padding: 1rem !important;
+      }
+
+      /* Menu items with thumbnails: hide thumb on very small screens */
+      .menu-item-with-thumb {
+        gap: 0.75rem !important;
+      }
+      .menu-item-with-thumb img {
+        width: 70px !important;
+        height: 56px !important;
+      }
+
+      /* Booking CTA buttons: full width */
+      .booking-cta-btns {
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+      .booking-cta-btns .btn {
+        width: 100%;
+        max-width: 280px;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -398,7 +451,7 @@
   <!-- Signature Dishes Photo Showcase -->
   <section style="background: var(--color-secondary); padding: 3rem 0;">
     <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+      <div class="dish-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
 
         <div style="border-radius: 12px; overflow: hidden; background: rgba(255,255,255,0.05);">
           <img src="images/dish-khoresh.jpg" alt="Khoresh Bademjan — Persian lamb and eggplant stew" style="width: 100%; height: 220px; object-fit: cover; display: block;" loading="lazy">
@@ -461,22 +514,22 @@
   <!-- Trust Bar -->
   <div style="background: var(--color-cream); border-top: 3px solid var(--color-primary); border-bottom: 3px solid var(--color-primary); padding: 1.25rem 0;">
     <div class="container">
-      <div style="display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; text-align: center; align-items: center;">
+      <div class="trust-bar-inner" style="display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; text-align: center; align-items: center;">
         <div>
           <div style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary);">4.8 / 5</div>
           <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.2rem;">37 Google reviews</div>
         </div>
-        <div style="width: 1px; height: 2rem; background: rgba(139,0,0,0.2);"></div>
+        <div class="trust-divider" style="width: 1px; height: 2rem; background: rgba(139,0,0,0.2);"></div>
         <div>
           <div style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary);">Dena kookt zelf</div>
           <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.2rem;">Familiebedrijf, elke dag</div>
         </div>
-        <div style="width: 1px; height: 2rem; background: rgba(139,0,0,0.2);"></div>
+        <div class="trust-divider" style="width: 1px; height: 2rem; background: rgba(139,0,0,0.2);"></div>
         <div>
           <div style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary);">Dagverse vis</div>
           <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.2rem;">Elke ochtend ingekocht</div>
         </div>
-        <div style="width: 1px; height: 2rem; background: rgba(139,0,0,0.2);"></div>
+        <div class="trust-divider" style="width: 1px; height: 2rem; background: rgba(139,0,0,0.2);"></div>
         <div>
           <div style="font-size: 1.2rem; font-weight: 800; color: var(--color-primary);">Di–Zo open</div>
           <div style="font-size: 0.8rem; color: var(--color-text-muted); margin-top: 0.2rem;">Vanaf 11:00 &mdash; vr&ndash;za t/m 22:00</div>
@@ -568,7 +621,7 @@
         <h2>Dinner</h2>
 
         <!-- First-timer callout -->
-        <div style="background: var(--color-secondary); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; border-left: 4px solid var(--color-accent);">
+        <div class="firsttimer-callout" style="background: var(--color-secondary); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 2rem; border-left: 4px solid var(--color-accent);">
           <p style="color: var(--color-accent); font-weight: 700; margin-bottom: 0.4rem;">For your first visit</p>
           <p style="color: rgba(246,219,150,0.85); font-size: 0.95rem; line-height: 1.5;">Order the <strong style="color: var(--color-accent);">Ghormeh Sabzi</strong> — it's Iran's national dish and the most-ordered on this menu. If you want something richer and more unusual, the <strong style="color: var(--color-accent);">Fesenjoon</strong> (walnut &amp; pomegranate duck stew) is the one that surprises people most. Pair either with a Saffron Beer.</p>
         </div>
@@ -622,7 +675,7 @@
           <p class="menu-item-description">Finely diced fresh salmon or tuna mixed with various sauces and seasonings</p>
         </div>
         
-        <div class="menu-item" style="display: flex; gap: 1.25rem; align-items: flex-start;">
+        <div class="menu-item menu-item-with-thumb" style="display: flex; gap: 1.25rem; align-items: flex-start;">
           <div style="flex: 1;">
             <div class="menu-item-header">
               <div class="menu-item-title">
@@ -650,7 +703,7 @@
           <p class="menu-item-description">Rice mixed with fava beans and dill, served with lamb topped with caramelized onions</p>
         </div>
         
-        <div class="menu-item" style="display: flex; gap: 1.25rem; align-items: flex-start;">
+        <div class="menu-item menu-item-with-thumb" style="display: flex; gap: 1.25rem; align-items: flex-start;">
           <div style="flex: 1;">
             <div class="menu-item-header">
               <div class="menu-item-title">
@@ -665,7 +718,7 @@
           <img src="images/dish-khoresh.jpg" alt="Khoresh Bademjan Persian lamb and eggplant stew" style="width: 90px; height: 72px; object-fit: cover; border-radius: 8px; flex-shrink: 0;" loading="lazy">
         </div>
         
-        <div class="menu-item" style="display: flex; gap: 1.25rem; align-items: flex-start;">
+        <div class="menu-item menu-item-with-thumb" style="display: flex; gap: 1.25rem; align-items: flex-start;">
           <div style="flex: 1;">
             <div class="menu-item-header">
               <div class="menu-item-title">
@@ -680,7 +733,7 @@
           <img src="images/gallery-2.jpg" alt="Zereshk Polo — saffron barberry rice with chicken and orange slices" style="width: 90px; height: 72px; object-fit: cover; border-radius: 8px; flex-shrink: 0;" loading="lazy">
         </div>
         
-        <div class="menu-item" style="display: flex; gap: 1.25rem; align-items: flex-start;">
+        <div class="menu-item menu-item-with-thumb" style="display: flex; gap: 1.25rem; align-items: flex-start;">
           <div style="flex: 1;">
             <div class="menu-item-header">
               <div class="menu-item-title">
@@ -695,7 +748,7 @@
           <img src="images/dish-fish.jpg" alt="Oven grilled fresh North Sea fish with Persian herbs" style="width: 90px; height: 72px; object-fit: cover; border-radius: 8px; flex-shrink: 0;" loading="lazy">
         </div>
         
-        <div class="menu-item" style="display: flex; gap: 1.25rem; align-items: flex-start;">
+        <div class="menu-item menu-item-with-thumb" style="display: flex; gap: 1.25rem; align-items: flex-start;">
           <div style="flex: 1;">
             <div class="menu-item-header">
               <div class="menu-item-title">
@@ -711,7 +764,7 @@
           <img src="images/gallery-7.jpg" alt="Ghormeh Sabzi — Persian herb stew with lamb and dried limes" style="width: 90px; height: 72px; object-fit: cover; border-radius: 8px; flex-shrink: 0;" loading="lazy">
         </div>
         
-        <div class="menu-item" style="display: flex; gap: 1.25rem; align-items: flex-start;">
+        <div class="menu-item menu-item-with-thumb" style="display: flex; gap: 1.25rem; align-items: flex-start;">
           <div style="flex: 1;">
             <div class="menu-item-header">
               <div class="menu-item-title">
@@ -1117,7 +1170,7 @@
       <h2 style="color: var(--color-accent); font-size: 1.8rem; margin-bottom: 0.5rem;">Convinced? Come eat with us.</h2>
       <p style="color: rgba(246,219,150,0.75); margin-bottom: 0.4rem;">Prinsestraat 62, 2513 CE Den Haag</p>
       <p style="color: rgba(246,219,150,0.6); font-size: 0.9rem; margin-bottom: 2rem;">Tue–Thu &amp; Sun 11:00–19:00 &nbsp;&middot;&nbsp; Fri–Sat 11:00–22:00 &nbsp;&middot;&nbsp; Closed Monday</p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <div class="booking-cta-btns" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
         <a href="https://widget.thefork.com/nl/5a76bdd4-58eb-4e8d-a86a-f507cf6e895b?step=date" target="_blank" rel="noopener noreferrer" class="btn btn-accent" style="font-size: 1rem; padding: 0.9rem 2rem;">Book a table</a>
         <a href="https://ubereats.com/nl/store/dena/peMmkNp3SySgoK-oHsEBVA?diningMode=PICKUP" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size: 1rem; padding: 0.9rem 2rem;">Order online</a>
       </div>
