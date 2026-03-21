@@ -287,4 +287,11 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://dena-restaurant.com/blog/vegetarisch-perzisch-eten.html</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
