@@ -1483,6 +1483,37 @@ section {
   color: var(--color-primary);
 }
 
+/* Blog FAQ */
+.blog-faq {
+  margin: var(--spacing-md) 0;
+}
+
+.blog-faq dt {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-secondary);
+  margin-top: 1.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.blog-faq dt:first-child {
+  margin-top: 0;
+}
+
+.blog-faq dd {
+  margin-left: 0;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(139, 0, 0, 0.1);
+}
+
+.blog-faq dd:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 /* Related Posts */
 .blog-related {
   background-color: var(--color-cream-light);
