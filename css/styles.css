@@ -214,6 +214,10 @@ p {
   font-size: 0.82rem;
   font-weight: 600;
   line-height: 1.3;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .announcement-bar a {
@@ -232,7 +236,7 @@ p {
 
 .header {
   position: fixed;
-  top: 32px;
+  top: 28px;
   left: 0;
   right: 0;
   z-index: 1000;
