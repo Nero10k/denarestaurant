@@ -93,6 +93,7 @@ The DENA's blog publishes articles about Persian cuisine, Middle Eastern food, f
 ## Pages
 
 - Homepage: https://dena-restaurant.com/
+- Woensdag Buffet: https://dena-restaurant.com/woensdag-buffet.html
 - Menu: https://dena-restaurant.com/menu.html
 - Our Story: https://dena-restaurant.com/story.html
 - Catering: https://dena-restaurant.com/catering.html
