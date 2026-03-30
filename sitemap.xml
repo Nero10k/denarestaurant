@@ -336,4 +336,11 @@
     <priority>0.9</priority>
   </url>
 
+  <url>
+    <loc>https://dena-restaurant.com/blog/sizdah-bedar-den-haag.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
