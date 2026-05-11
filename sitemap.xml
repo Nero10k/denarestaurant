@@ -343,4 +343,18 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://dena-restaurant.com/blog/persian-rice-dishes.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://dena-restaurant.com/blog/perzisch-eten-zuid-holland.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
