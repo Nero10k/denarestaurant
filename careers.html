@@ -324,7 +324,7 @@
             <div class="form-group">
               <label for="cv">Upload your CV <span class="req">*</span></label>
               <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
-              <p class="field-hint">PDF, Word, or image (max 4 MB).</p>
+              <p class="field-hint">PDF, Word, or image (max 3 MB).</p>
             </div>
 
             <p class="form-error" id="formError" role="alert"></p>
@@ -393,16 +393,27 @@
   <script src="js/main.js"></script>
   <script>
     // Submit the application to our own /api/apply backend (Vercel + Blob storage).
+    // The CV is sent as a base64 data URL inside a JSON body.
     (function () {
       var form = document.getElementById('applyForm');
       if (!form) return;
       var btn = document.getElementById('submitBtn');
       var errorBox = document.getElementById('formError');
       var success = document.getElementById('formSuccess');
+      var MAX_BYTES = 3 * 1024 * 1024;
 
       function showError(msg) {
         errorBox.textContent = msg;
         errorBox.style.display = 'block';
+      }
+
+      function readFileAsDataUrl(file) {
+        return new Promise(function (resolve, reject) {
+          var reader = new FileReader();
+          reader.onload = function () { resolve(reader.result); };
+          reader.onerror = function () { reject(new Error('read-failed')); };
+          reader.readAsDataURL(file);
+        });
       }
 
       form.addEventListener('submit', async function (e) {
@@ -415,10 +426,11 @@
           return;
         }
 
-        // Client-side size guard (backend enforces 4 MB too).
         var fileInput = document.getElementById('cv');
-        if (fileInput.files[0] && fileInput.files[0].size > 4 * 1024 * 1024) {
-          showError('That file is too large. Please keep your CV under 4 MB.');
+        var file = fileInput.files[0];
+        if (!file) { showError('Please attach your CV.'); return; }
+        if (file.size > MAX_BYTES) {
+          showError('That file is too large. Please keep your CV under 3 MB.');
           return;
         }
 
@@ -427,7 +439,27 @@
         btn.textContent = 'Sending…';
 
         try {
-          var res = await fetch('/api/apply', { method: 'POST', body: new FormData(form) });
+          var cvBase64 = await readFileAsDataUrl(file);
+          var payload = {
+            firstName: form.firstName.value,
+            lastName: form.lastName.value,
+            email: form.email.value,
+            phone: form.phone.value,
+            role: form.role.value,
+            availability: form.availability.value,
+            age: form.age.value,
+            message: form.message.value,
+            cvBase64: cvBase64,
+            cvName: file.name,
+            cvType: file.type,
+            _honey: form._honey.value
+          };
+
+          var res = await fetch('/api/apply', {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
           var data = await res.json().catch(function () { return {}; });
 
           if (res.ok && data.ok) {

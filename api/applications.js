@@ -1,27 +1,18 @@
 // Returns all stored applications as JSON, for the private admin page.
+// Classic Vercel Node.js (req, res) function.
 // Protected by a secret key you set in Vercel:  ADMIN_KEY
 // Called as:  /api/applications?key=YOUR_SECRET
 
 import { list } from '@vercel/blob';
 
-export const config = { runtime: 'edge' };
-
-function json(body, status = 200) {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: { 'content-type': 'application/json' },
-  });
-}
-
-export default async function handler(request) {
-  const url = new URL(request.url);
-  const key = url.searchParams.get('key') || '';
+export default async function handler(req, res) {
+  const key = (req.query && req.query.key) || '';
 
   if (!process.env.ADMIN_KEY) {
-    return json({ error: 'ADMIN_KEY is not configured on the server.' }, 500);
+    return res.status(500).json({ error: 'ADMIN_KEY is not configured on the server.' });
   }
   if (key !== process.env.ADMIN_KEY) {
-    return json({ error: 'Unauthorized' }, 401);
+    return res.status(401).json({ error: 'Unauthorized' });
   }
 
   try {
@@ -31,8 +22,8 @@ export default async function handler(request) {
     const records = await Promise.all(
       recordBlobs.map(async (b) => {
         try {
-          const res = await fetch(b.url);
-          return await res.json();
+          const r = await fetch(b.url);
+          return await r.json();
         } catch {
           return null;
         }
@@ -43,9 +34,9 @@ export default async function handler(request) {
       .filter(Boolean)
       .sort((a, b) => (a.submittedAt < b.submittedAt ? 1 : -1));
 
-    return json({ count: data.length, applications: data });
+    return res.status(200).json({ count: data.length, applications: data });
   } catch (err) {
     console.error('List applications error:', err);
-    return json({ error: 'Could not load applications.' }, 500);
+    return res.status(500).json({ error: 'Could not load applications.' });
   }
 }
