@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Applications — DENA's (Private)</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #C34B1D;
+      --secondary: #8A0000;
+      --cream: #F6DB96;
+      --cream-light: #FBF0D4;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', -apple-system, sans-serif;
+      margin: 0;
+      background: var(--cream-light);
+      color: var(--secondary);
+      padding: 2rem 1rem;
+    }
+    .wrap { max-width: 1000px; margin: 0 auto; }
+    h1 { color: var(--secondary); margin: 0 0 0.25rem; }
+    .sub { color: var(--primary); margin: 0 0 2rem; font-weight: 600; }
+    .gate {
+      background: #fff; border-radius: 16px; padding: 2rem;
+      max-width: 420px; margin: 3rem auto; box-shadow: 0 10px 40px rgba(138,0,0,0.12);
+      text-align: center;
+    }
+    .gate input {
+      width: 100%; padding: 0.8rem 0.9rem; font-size: 1rem; font-family: inherit;
+      border: 2px solid #e6d9b8; border-radius: 6px; margin: 1rem 0;
+    }
+    .gate input:focus { outline: none; border-color: var(--primary); }
+    button {
+      background: var(--primary); color: #fff; border: none; cursor: pointer;
+      padding: 0.8rem 1.4rem; font-size: 1rem; font-weight: 600; font-family: inherit;
+      border-radius: 6px; transition: background .2s;
+    }
+    button:hover { background: var(--secondary); }
+    .msg { color: var(--secondary); min-height: 1.2em; margin-top: 0.5rem; font-size: 0.9rem; }
+    .toolbar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .count { font-weight: 700; }
+    .card {
+      background: #fff; border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem;
+      box-shadow: 0 4px 16px rgba(138,0,0,0.08);
+    }
+    .card-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+    .card-head h3 { margin: 0; color: var(--primary); }
+    .when { color: #9a7b3a; font-size: 0.85rem; }
+    .meta { margin: 0.75rem 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.4rem 1.5rem; }
+    .meta div { font-size: 0.92rem; }
+    .meta span { color: #9a7b3a; }
+    .msg-body { background: var(--cream-light); border-radius: 8px; padding: 0.75rem 1rem; margin: 0.5rem 0; white-space: pre-wrap; font-size: 0.92rem; }
+    a.cv {
+      display: inline-block; background: var(--primary); color: #fff; text-decoration: none;
+      padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; font-size: 0.9rem;
+    }
+    a.cv:hover { background: var(--secondary); }
+    a.link { color: var(--primary); }
+    .hidden { display: none; }
+    .empty { text-align: center; color: #9a7b3a; padding: 3rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- Login gate -->
+    <div class="gate" id="gate">
+      <h1>Applications</h1>
+      <p class="sub">DENA's — private</p>
+      <input type="password" id="key" placeholder="Enter access key" autocomplete="current-password">
+      <button id="loginBtn">View applications</button>
+      <p class="msg" id="loginMsg"></p>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dash" class="hidden">
+      <div class="toolbar">
+        <div>
+          <h1>Applications</h1>
+          <p class="sub"><span class="count" id="count">0</span> received</p>
+        </div>
+        <div>
+          <button id="refreshBtn">Refresh</button>
+          <button id="logoutBtn" style="background:#9a7b3a;">Lock</button>
+        </div>
+      </div>
+      <div id="list"></div>
+    </div>
+  </div>
+
+  <script>
+    const gate = document.getElementById('gate');
+    const dash = document.getElementById('dash');
+    const keyInput = document.getElementById('key');
+    const loginMsg = document.getElementById('loginMsg');
+
+    function esc(s) {
+      return String(s == null ? '' : s).replace(/[&<>"']/g, c => (
+        { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c]
+      ));
+    }
+
+    function fmtDate(iso) {
+      try { return new Date(iso).toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short' }); }
+      catch { return iso || ''; }
+    }
+
+    async function load(key) {
+      loginMsg.textContent = 'Loading…';
+      let res;
+      try {
+        res = await fetch('/api/applications?key=' + encodeURIComponent(key));
+      } catch {
+        loginMsg.textContent = 'Network error. Try again.';
+        return;
+      }
+      if (res.status === 401) { loginMsg.textContent = 'Wrong access key.'; return; }
+      if (!res.ok) { loginMsg.textContent = 'Server error (' + res.status + ').'; return; }
+
+      const data = await res.json();
+      sessionStorage.setItem('dena_admin_key', key);
+      loginMsg.textContent = '';
+      gate.classList.add('hidden');
+      dash.classList.remove('hidden');
+      render(data.applications || []);
+    }
+
+    function render(apps) {
+      document.getElementById('count').textContent = apps.length;
+      const list = document.getElementById('list');
+      if (!apps.length) {
+        list.innerHTML = '<div class="empty">No applications yet.</div>';
+        return;
+      }
+      list.innerHTML = apps.map(a => `
+        <div class="card">
+          <div class="card-head">
+            <h3>${esc(a.firstName)} ${esc(a.lastName)}</h3>
+            <span class="when">${esc(fmtDate(a.submittedAt))}</span>
+          </div>
+          <div class="meta">
+            <div><span>Email:</span> <a class="link" href="mailto:${esc(a.email)}">${esc(a.email)}</a></div>
+            <div><span>Phone:</span> <a class="link" href="tel:${esc(a.phone)}">${esc(a.phone)}</a></div>
+            <div><span>Role:</span> ${esc(a.role) || '-'}</div>
+            <div><span>Availability:</span> ${esc(a.availability) || '-'}</div>
+            <div><span>Age:</span> ${esc(a.age) || '-'}</div>
+          </div>
+          ${a.message ? `<div class="msg-body">${esc(a.message)}</div>` : ''}
+          <a class="cv" href="${esc(a.cvUrl)}" download="${esc(a.cvFileName || 'cv')}" target="_blank" rel="noopener">Download CV (${esc(a.cvFileName || 'file')})</a>
+        </div>
+      `).join('');
+    }
+
+    document.getElementById('loginBtn').addEventListener('click', () => {
+      const key = keyInput.value.trim();
+      if (key) load(key);
+    });
+    keyInput.addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('loginBtn').click(); });
+    document.getElementById('refreshBtn').addEventListener('click', () => {
+      load(sessionStorage.getItem('dena_admin_key') || '');
+    });
+    document.getElementById('logoutBtn').addEventListener('click', () => {
+      sessionStorage.removeItem('dena_admin_key');
+      dash.classList.add('hidden');
+      gate.classList.remove('hidden');
+      keyInput.value = '';
+    });
+
+    // Auto-login if a key is remembered this session.
+    const saved = sessionStorage.getItem('dena_admin_key');
+    if (saved) load(saved);
+  </script>
+</body>
+</html>
