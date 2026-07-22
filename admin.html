@@ -55,11 +55,17 @@
     .meta div { font-size: 0.92rem; }
     .meta span { color: #9a7b3a; }
     .msg-body { background: var(--cream-light); border-radius: 8px; padding: 0.75rem 1rem; margin: 0.5rem 0; white-space: pre-wrap; font-size: 0.92rem; }
+    .card-actions { display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap; }
     a.cv {
       display: inline-block; background: var(--primary); color: #fff; text-decoration: none;
       padding: 0.5rem 1rem; border-radius: 6px; font-weight: 600; font-size: 0.9rem;
     }
     a.cv:hover { background: var(--secondary); }
+    button.del {
+      background: transparent; color: #9a7b3a; border: 1px solid #d9c48f;
+      padding: 0.5rem 1rem; font-size: 0.85rem; border-radius: 6px;
+    }
+    button.del:hover { background: #8A0000; color: #fff; border-color: #8A0000; }
     a.link { color: var(--primary); }
     .hidden { display: none; }
     .empty { text-align: center; color: #9a7b3a; padding: 3rem; }
@@ -150,9 +156,38 @@
             <div><span>Age:</span> ${esc(a.age) || '-'}</div>
           </div>
           ${a.message ? `<div class="msg-body">${esc(a.message)}</div>` : ''}
-          <a class="cv" href="${esc(a.cvUrl)}" download="${esc(a.cvFileName || 'cv')}" target="_blank" rel="noopener">Download CV (${esc(a.cvFileName || 'file')})</a>
+          <div class="card-actions">
+            <a class="cv" href="${esc(a.cvUrl)}" download="${esc(a.cvFileName || 'cv')}" target="_blank" rel="noopener">Download CV (${esc(a.cvFileName || 'file')})</a>
+            <button class="del" data-id="${esc(a.id)}" data-name="${esc(a.firstName)} ${esc(a.lastName)}">Delete</button>
+          </div>
         </div>
       `).join('');
+
+      list.querySelectorAll('button.del').forEach(function (b) {
+        b.addEventListener('click', function () { remove(b.dataset.id, b.dataset.name); });
+      });
+    }
+
+    async function remove(id, name) {
+      if (!confirm('Delete the application from ' + name + '? This permanently removes their CV and cannot be undone.')) return;
+      const key = sessionStorage.getItem('dena_admin_key') || '';
+      let res;
+      try {
+        res = await fetch('/api/delete', {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ key: key, id: id })
+        });
+      } catch {
+        alert('Network error. Please try again.');
+        return;
+      }
+      if (res.ok) {
+        load(key); // refresh the list
+      } else {
+        const data = await res.json().catch(() => ({}));
+        alert(data.error || 'Could not delete. Please try again.');
+      }
     }
 
     document.getElementById('loginBtn').addEventListener('click', () => {
