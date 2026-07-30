@@ -127,6 +127,16 @@
       border-color: var(--color-primary);
     }
     .apply-form textarea { resize: vertical; min-height: 110px; }
+    .lang-options { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .lang-option {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-weight: 500 !important; margin: 0 !important; cursor: pointer;
+      background: var(--color-cream-light); border: 2px solid #e6d9b8;
+      border-radius: var(--radius-sm); padding: 0.55rem 0.9rem;
+      transition: border-color var(--transition-fast), background var(--transition-fast);
+    }
+    .lang-option:hover { border-color: var(--color-primary); }
+    .lang-option input { width: auto !important; margin: 0; accent-color: var(--color-primary); }
     .apply-form input[type="file"] { padding: 0.6rem; background: var(--color-cream-light); cursor: pointer; }
     .field-hint { font-size: 0.85rem; color: var(--color-text-muted); margin-top: 0.35rem; }
     .apply-form .btn-primary { width: 100%; padding: 1rem; font-size: 1.1rem; }
@@ -311,18 +321,16 @@
             </div>
 
             <div class="form-group">
-              <label for="language">Which language do you speak best? <span class="req">*</span></label>
-              <select id="language" name="language" required>
-                <option value="" disabled selected>Choose one…</option>
-                <option value="Dutch">Dutch</option>
-                <option value="English">English</option>
-                <option value="Persian / Farsi">Persian / Farsi</option>
-                <option value="Arabic">Arabic</option>
-                <option value="Turkish">Turkish</option>
-                <option value="Other">Other</option>
-              </select>
-              <input type="text" id="langOther" name="langOther" placeholder="Other languages you speak (optional)" style="margin-top: 0.75rem;">
-              <p class="field-hint">Pick the language you're most comfortable in, and list any others below.</p>
+              <label>Which languages do you speak? <span class="req">*</span></label>
+              <div class="lang-options">
+                <label class="lang-option"><input type="checkbox" name="lang" value="Dutch"> Dutch</label>
+                <label class="lang-option"><input type="checkbox" name="lang" value="English"> English</label>
+                <label class="lang-option"><input type="checkbox" name="lang" value="Persian / Farsi"> Persian / Farsi</label>
+                <label class="lang-option"><input type="checkbox" name="lang" value="Arabic"> Arabic</label>
+                <label class="lang-option"><input type="checkbox" name="lang" value="Turkish"> Turkish</label>
+              </div>
+              <input type="text" id="langOther" name="langOther" placeholder="Other languages (optional)" style="margin-top: 0.75rem;">
+              <p class="field-hint">Tick every language you speak — Dutch is a plus!</p>
             </div>
 
             <div class="form-group">
@@ -441,11 +449,16 @@
           return;
         }
 
-        // Collect languages: main (dropdown, required) + optional others (free text).
-        var langs = [];
-        if (form.language.value) langs.push(form.language.value);
+        // Collect every language the applicant speaks (checkboxes + optional "other").
+        var langs = Array.prototype.slice
+          .call(form.querySelectorAll('input[name="lang"]:checked'))
+          .map(function (c) { return c.value; });
         var langOther = form.langOther.value.trim();
         if (langOther) langs.push(langOther);
+        if (!langs.length) {
+          showError('Please tell us which language(s) you speak.');
+          return;
+        }
 
         var fileInput = document.getElementById('cv');
         var file = fileInput.files[0];
