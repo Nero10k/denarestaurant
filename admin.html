@@ -153,6 +153,7 @@
             <div><span>Phone:</span> <a class="link" href="tel:${esc(a.phone)}">${esc(a.phone)}</a></div>
             <div><span>Role:</span> ${esc(a.role) || '-'}</div>
             <div><span>Availability:</span> ${esc(a.availability) || '-'}</div>
+            <div><span>Languages:</span> ${esc(a.languages) || '-'}</div>
             <div><span>Age:</span> ${esc(a.age) || '-'}</div>
           </div>
           ${a.message ? `<div class="msg-body">${esc(a.message)}</div>` : ''}

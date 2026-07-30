@@ -40,6 +40,7 @@ export default async function handler(req, res) {
       phone: str(body.phone),
       role: str(body.role),
       availability: str(body.availability),
+      languages: str(body.languages),
       age: str(body.age),
       message: str(body.message),
     };
