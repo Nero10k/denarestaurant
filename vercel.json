@@ -29,6 +29,16 @@
       "source": "/blog",
       "destination": "/blog/index.html",
       "permanent": true
+    },
+    {
+      "source": "/careers",
+      "destination": "/careers.html",
+      "permanent": true
+    },
+    {
+      "source": "/woensdag-buffet",
+      "destination": "/woensdag-buffet.html",
+      "permanent": true
     }
   ]
 }

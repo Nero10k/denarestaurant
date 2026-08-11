@@ -8,7 +8,7 @@ DENA'S Persian Fusion Restaurant is located at Prinsestraat 62, 2513 CE Den Haag
 
 The restaurant is family-run. Dena cooks. Kasper welcomes guests. Lars helps wherever needed.
 
-The cuisine is Persian Fusion: traditional Persian recipes (Ghormeh Sabzi, Fesenjan, Zereshk Polo, Khoresh Bademjan, Baghali Polo) combined with fresh Dutch seasonal produce and local influences. Persian food is aromatic rather than spicy — complexity comes from sour-sweet balance (pomegranate, dried lime, barberries) and long slow cooking.
+The cuisine is Persian Fusion: traditional Persian recipes (Ghormeh Sabzi, Fesenjoon, Zereshk Polo, Khoresht-e Badenjan, Baghali Polo) combined with fresh Dutch seasonal produce and local influences. Persian food is aromatic rather than spicy — complexity comes from sour-sweet balance (pomegranate, dried lime, barberries) and long slow cooking.
 
 Operated by: The Happy Food Services B.V., KvK 96854197
 
@@ -23,42 +23,51 @@ Operated by: The Happy Food Services B.V., KvK 96854197
 
 ## Opening Hours
 
-- Tuesday–Thursday: 11:00–19:00
-- Friday–Saturday: 11:00–22:00
-- Sunday: 11:00–19:00
+- Tuesday–Thursday: 12:00–19:00
+- Friday–Saturday: 12:00–22:00
+- Sunday: 12:00–19:00
 - Monday: Closed
 
 ## Menu Highlights
 
 **Lunch:**
-- Kotlet (Persian meat patty sandwich) €9.50
-- Kuku Sabzi (herb frittata sandwich) €8.50
-- Fish Tartare sandwich €12.50
+- Ash Reshteh (Persian noodle soup with herbs and legumes) €15.00
+- Kuku Sabzi (Persian herb quiche) €10.50
+- Chicken Salad €12.95
+- Aubergine Dip (roasted aubergine with feta and naan) €12.95
+- Salmon / Chicken / Fish Sandwich (on toast or warm naan) €12.95 each
+- Kibbeling (crispy fried fish) from €9.50
+- Prawn & Vegetable Pasta €22.95
+- Fish & Chips €20.95
 
 **Dinner starters:**
-- Kotlet €9.50
-- Kuku Sabzi €8.50
-- Fish Tartare €12.50
-- Mast-o Moosir (yogurt with shallot and dill) €6.50
-- Torshi (pickled vegetables) €5.50
+- Kuku Sabzi (Persian herb quiche) €10.50
+- Mast O'Moosir (yogurt with garlic, dill and shallots) €8.50
+- Soup of the Day €15.00
+- Avocado with Olives & Feta €12.95
 
 **Dinner mains:**
-- Fesenjoon (walnut stew with duck breast, pomegranate molasses) €28.00
-- Baghali Polo (fava bean and dill rice with lamb) €37.50
-- Khoresh Bademjan (Persian lamb stew with eggplant and tomato) €27.50
-- Zereshk Polo (saffron jeweled rice with barberries and chicken) €29.00
-- Oven Grilled Fish (fresh fish with rice or potatoes) €37.50
-- Ghormeh Sabzi (Persian herb stew with lamb and beans) €29.00
-- DENA's Surprise (chef's daily selection) €27.50
+- Sabzi Polo Mahi (oven-roasted fish with herbed rice or potatoes) €38.95
+- Ghormeh Sabzi (Persian herb stew with lamb and beans) €31.95
+- Baghali Polo (broad bean and dill rice with lamb) €31.95
+- Zereshk Polo (saffron rice with barberries and chicken) €31.00
+- Fesenjoon (walnut and pomegranate stew with duck breast) €30.00
+- Khoresht-e Badenjan (lamb and veal stew with aubergine and tomato) €29.50
+- Prawns with Rice €26.00
+- Chef's Special (chef's daily selection) €39.50 for one person / €75.00 for two
 
-**Desserts:**
-- Bastani (Persian saffron ice cream) €7.50
-- Sholeh Zard (saffron rice pudding) €6.50
+**Side dishes:**
+- Torshi (pickled vegetables) €7.50
+- Persian Salad €7.50
+- Olive & Pomegranate Salad €9.00
+
+**Dessert:**
+- Oven-Baked Fruit with Cinnamon & Honey (baked fruit with almonds and ice cream) €15.50
 
 **Signature drinks:**
-- Saffron Beer (alcoholic and alcohol-free) €4.00
-- Pomegranate Liqueur €6.95
-- Persian Shiraz (glass) €8.50
+- Saffron Beer (alcoholic and alcohol-free) €4.75
+- Pomegranate Liqueur (glass) €6.95
+- Persian Shiraz (glass) €6.95
 
 ## Search Categories
 
@@ -85,7 +94,7 @@ The DENA's blog publishes articles about Persian cuisine, Middle Eastern food, f
 - 5 Persian Dishes You Must Try in The Hague — https://dena-restaurant.com/blog/5-persian-dishes-the-hague.html
 - Vegetarisch Perzisch eten: wat kun je bestellen bij DENA's in Den Haag? — https://dena-restaurant.com/blog/vegetarisch-perzisch-eten.html
 - Best Fresh Fish Restaurants in Den Haag: What to Look For — https://dena-restaurant.com/blog/best-fish-restaurant-den-haag.html
-- Perzische desserts: Bastani en Sholeh Zard bij DENA's — https://dena-restaurant.com/blog/perzische-desserts.html
+- Perzische desserts: Bastani, Sholeh Zard en de zoete Perzische traditie — https://dena-restaurant.com/blog/perzische-desserts.html
 - Persian Food in Den Haag: Where to Find the Best Iranian Cuisine — https://dena-restaurant.com/blog/persian-food-den-haag.html
 - Lunchen in Den Haag Centrum: De Lekkerste Plekken op de Prinsestraat — https://dena-restaurant.com/blog/lunch-den-haag-centrum.html
 - Romantisch Diner in Den Haag: De Beste Restaurants voor een Date Night — https://dena-restaurant.com/blog/romantisch-diner-den-haag.html
