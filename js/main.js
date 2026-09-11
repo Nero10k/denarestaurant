@@ -28,14 +28,60 @@ document.addEventListener('DOMContentLoaded', function() {
 function initCallButton() {
   if (document.querySelector('.call-fab')) return;
 
-  var a = document.createElement('a');
-  a.className = 'call-fab';
-  a.href = 'tel:+31702071479';
-  a.setAttribute('aria-label', 'Call DENA\'s to reserve a table');
-  a.innerHTML =
+  var DISPLAY_NUMBER = '070 207 1479';
+  var DIAL_NUMBER = '+31702071479';
+
+  // Phones/tablets can actually place a call; desktops would only show an
+  // "open with which app?" prompt, so there we show and copy the number instead.
+  function canDial() {
+    return (window.matchMedia && window.matchMedia('(pointer: coarse)').matches) ||
+           navigator.maxTouchPoints > 0;
+  }
+
+  var phoneIcon =
     '<svg class="call-fab-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' +
     '<path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>' +
-    '</svg><span class="call-fab-text">Call us</span>';
+    '</svg>';
+
+  var a = document.createElement('a');
+  a.className = 'call-fab';
+  a.href = 'tel:' + DIAL_NUMBER;
+  a.setAttribute('aria-label', 'Call DENA\'s on ' + DISPLAY_NUMBER + ' to reserve a table');
+  a.innerHTML = phoneIcon + '<span class="call-fab-text"></span>';
+
+  function setLabel() {
+    a.querySelector('.call-fab-text').textContent = canDial() ? 'Call us' : DISPLAY_NUMBER;
+  }
+  setLabel();
+
+  // Re-label if the device turns out to be touch-capable after load.
+  if (window.matchMedia) {
+    var mq = window.matchMedia('(pointer: coarse)');
+    if (mq.addEventListener) mq.addEventListener('change', setLabel);
+  }
+  window.addEventListener('touchstart', setLabel, { once: true, passive: true });
+
+  // Decided at click time, so a real phone always dials even if touch support
+  // is detected late.
+  a.addEventListener('click', function (e) {
+    if (canDial()) return; // let the tel: link dial normally
+
+    e.preventDefault();
+    var label = a.querySelector('.call-fab-text');
+
+    function flash(msg) {
+      label.textContent = msg;
+      setTimeout(function () { label.textContent = DISPLAY_NUMBER; }, 2000);
+    }
+
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(DISPLAY_NUMBER)
+        .then(function () { flash('Number copied!'); })
+        .catch(function () { flash(DISPLAY_NUMBER); });
+    } else {
+      flash(DISPLAY_NUMBER);
+    }
+  });
 
   document.body.appendChild(a);
 }
