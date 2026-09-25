@@ -31,6 +31,12 @@ function initCallButton() {
   var DISPLAY_NUMBER = '070 207 1479';
   var DIAL_NUMBER = '+31702071479';
 
+  // Button copy follows the page language (<html lang="nl"> on Dutch pages).
+  var isDutch = (document.documentElement.lang || '').toLowerCase().indexOf('nl') === 0;
+  var TEXT = isDutch
+    ? { call: 'Bel ons', copied: 'Nummer gekopieerd!', aria: 'Bel DENA\'s op ' + DISPLAY_NUMBER + ' om te reserveren' }
+    : { call: 'Call us', copied: 'Number copied!', aria: 'Call DENA\'s on ' + DISPLAY_NUMBER + ' to reserve a table' };
+
   // Phones/tablets can actually place a call; desktops would only show an
   // "open with which app?" prompt, so there we show and copy the number instead.
   function canDial() {
@@ -46,11 +52,11 @@ function initCallButton() {
   var a = document.createElement('a');
   a.className = 'call-fab';
   a.href = 'tel:' + DIAL_NUMBER;
-  a.setAttribute('aria-label', 'Call DENA\'s on ' + DISPLAY_NUMBER + ' to reserve a table');
+  a.setAttribute('aria-label', TEXT.aria);
   a.innerHTML = phoneIcon + '<span class="call-fab-text"></span>';
 
   function setLabel() {
-    a.querySelector('.call-fab-text').textContent = canDial() ? 'Call us' : DISPLAY_NUMBER;
+    a.querySelector('.call-fab-text').textContent = canDial() ? TEXT.call : DISPLAY_NUMBER;
   }
   setLabel();
 
@@ -76,7 +82,7 @@ function initCallButton() {
 
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(DISPLAY_NUMBER)
-        .then(function () { flash('Number copied!'); })
+        .then(function () { flash(TEXT.copied); })
         .catch(function () { flash(DISPLAY_NUMBER); });
     } else {
       flash(DISPLAY_NUMBER);
