@@ -37,7 +37,12 @@
     },
     {
       "source": "/woensdag-buffet",
-      "destination": "/woensdag-buffet.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/woensdag-buffet.html",
+      "destination": "/",
       "permanent": true
     }
   ]

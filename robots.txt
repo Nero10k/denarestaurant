@@ -3,8 +3,8 @@ Allow: /
 Disallow: /admin.html
 Disallow: /api/
 
-Sitemap: https://dena-restaurant.com/sitemap.xml
+Sitemap: https://www.dena-restaurant.com/sitemap.xml
 
 # AI crawler discovery
-# Short summary: https://dena-restaurant.com/llms.txt
-# Full content: https://dena-restaurant.com/llms-full.txt
+# Short summary: https://www.dena-restaurant.com/llms.txt
+# Full content: https://www.dena-restaurant.com/llms-full.txt

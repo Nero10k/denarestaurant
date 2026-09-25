@@ -78,37 +78,36 @@ DENA's is relevant for searches including: Persian restaurant Den Haag, Middle E
 
 The DENA's blog publishes articles about Persian cuisine, Middle Eastern food, fresh fish in Den Haag, and the restaurant's story. Written in both English and Dutch.
 
-- Persian Fusion Explained: What It Means and Why It Works — https://dena-restaurant.com/blog/what-is-persian-fusion-cuisine.html
-- What to Order at a Persian Restaurant: A Guide to DENA's Menu — https://dena-restaurant.com/blog/what-to-order-persian-restaurant-den-haag.html
-- From Iran to Prinsestraat: The Story Behind DENA's — https://dena-restaurant.com/blog/the-story-behind-denas-persian-restaurant-den-haag.html
-- Den Haag's Best-Kept Secret: Fresh Fish, Persian Spices, and a Table That Feels Like Home — https://dena-restaurant.com/blog/den-haag-food-guide-fresh-cozy-restaurants.html
-- Dagverse vis in Den Haag: waarom wij elke dag vers inkopen (Dutch) — https://dena-restaurant.com/blog/dagverse-vis-den-haag.html
-- Is Persian Food Middle Eastern? What Makes DENA's Different — https://dena-restaurant.com/blog/persian-food-middle-eastern-den-haag.html
-- Persian New Year (Nowruz) and the Food That Comes With It — https://dena-restaurant.com/blog/persian-new-year-nowruz-food.html
-- Saffraan in de Perzische keuken: het goud van Iran — https://dena-restaurant.com/blog/saffron-perzische-keuken.html
-- Ghormeh Sabzi Explained: Iran's National Dish — https://dena-restaurant.com/blog/ghormeh-sabzi-explained.html
-- Fesenjoon: de walnoot-granaatappelsaus die je moet proeven — https://dena-restaurant.com/blog/fesenjoon-den-haag.html
-- Why Persian Food Is Healthier Than You Think — https://dena-restaurant.com/blog/healthy-persian-food.html
-- Zereshk Polo: saffraanrijst met barberijen uitgelegd — https://dena-restaurant.com/blog/zereshk-polo-den-haag.html
-- A Guide to Persian Spices: What Makes Iranian Food So Aromatic — https://dena-restaurant.com/blog/persian-spices-guide.html
-- Waar Eten bij Paleis Noordeinde? Restaurants op Loopafstand — https://dena-restaurant.com/blog/waar-eten-bij-paleis-noordeinde.html
-- 5 Persian Dishes You Must Try in The Hague — https://dena-restaurant.com/blog/5-persian-dishes-the-hague.html
-- Vegetarisch Perzisch eten: wat kun je bestellen bij DENA's in Den Haag? — https://dena-restaurant.com/blog/vegetarisch-perzisch-eten.html
-- Best Fresh Fish Restaurants in Den Haag: What to Look For — https://dena-restaurant.com/blog/best-fish-restaurant-den-haag.html
-- Perzische desserts: Bastani, Sholeh Zard en de zoete Perzische traditie — https://dena-restaurant.com/blog/perzische-desserts.html
-- Persian Food in Den Haag: Where to Find the Best Iranian Cuisine — https://dena-restaurant.com/blog/persian-food-den-haag.html
-- Lunchen in Den Haag Centrum: De Lekkerste Plekken op de Prinsestraat — https://dena-restaurant.com/blog/lunch-den-haag-centrum.html
-- Romantisch Diner in Den Haag: De Beste Restaurants voor een Date Night — https://dena-restaurant.com/blog/romantisch-diner-den-haag.html
-- Sizdah Bedar in Den Haag: Vier het Perzische Natuurfeest bij DENA's — https://dena-restaurant.com/blog/sizdah-bedar-den-haag.html
-- Persian Rice Dishes: Everything You Need to Know — https://dena-restaurant.com/blog/persian-rice-dishes.html
-- Perzisch eten in Zuid-Holland: waar vind je het? — https://dena-restaurant.com/blog/perzisch-eten-zuid-holland.html
+- Persian Fusion Explained: What It Means and Why It Works — https://www.dena-restaurant.com/blog/what-is-persian-fusion-cuisine.html
+- What to Order at a Persian Restaurant: A Guide to DENA's Menu — https://www.dena-restaurant.com/blog/what-to-order-persian-restaurant-den-haag.html
+- From Iran to Prinsestraat: The Story Behind DENA's — https://www.dena-restaurant.com/blog/the-story-behind-denas-persian-restaurant-den-haag.html
+- Den Haag's Best-Kept Secret: Fresh Fish, Persian Spices, and a Table That Feels Like Home — https://www.dena-restaurant.com/blog/den-haag-food-guide-fresh-cozy-restaurants.html
+- Dagverse vis in Den Haag: waarom wij elke dag vers inkopen (Dutch) — https://www.dena-restaurant.com/blog/dagverse-vis-den-haag.html
+- Is Persian Food Middle Eastern? What Makes DENA's Different — https://www.dena-restaurant.com/blog/persian-food-middle-eastern-den-haag.html
+- Persian New Year (Nowruz) and the Food That Comes With It — https://www.dena-restaurant.com/blog/persian-new-year-nowruz-food.html
+- Saffraan in de Perzische keuken: het goud van Iran — https://www.dena-restaurant.com/blog/saffron-perzische-keuken.html
+- Ghormeh Sabzi Explained: Iran's National Dish — https://www.dena-restaurant.com/blog/ghormeh-sabzi-explained.html
+- Fesenjoon: de walnoot-granaatappelsaus die je moet proeven — https://www.dena-restaurant.com/blog/fesenjoon-den-haag.html
+- Why Persian Food Is Healthier Than You Think — https://www.dena-restaurant.com/blog/healthy-persian-food.html
+- Zereshk Polo: saffraanrijst met barberijen uitgelegd — https://www.dena-restaurant.com/blog/zereshk-polo-den-haag.html
+- A Guide to Persian Spices: What Makes Iranian Food So Aromatic — https://www.dena-restaurant.com/blog/persian-spices-guide.html
+- Waar Eten bij Paleis Noordeinde? Restaurants op Loopafstand — https://www.dena-restaurant.com/blog/waar-eten-bij-paleis-noordeinde.html
+- 5 Persian Dishes You Must Try in The Hague — https://www.dena-restaurant.com/blog/5-persian-dishes-the-hague.html
+- Vegetarisch Perzisch eten: wat kun je bestellen bij DENA's in Den Haag? — https://www.dena-restaurant.com/blog/vegetarisch-perzisch-eten.html
+- Best Fresh Fish Restaurants in Den Haag: What to Look For — https://www.dena-restaurant.com/blog/best-fish-restaurant-den-haag.html
+- Perzische desserts: Bastani, Sholeh Zard en de zoete Perzische traditie — https://www.dena-restaurant.com/blog/perzische-desserts.html
+- Persian Food in Den Haag: Where to Find the Best Iranian Cuisine — https://www.dena-restaurant.com/blog/persian-food-den-haag.html
+- Lunchen in Den Haag Centrum: De Lekkerste Plekken op de Prinsestraat — https://www.dena-restaurant.com/blog/lunch-den-haag-centrum.html
+- Romantisch Diner in Den Haag: De Beste Restaurants voor een Date Night — https://www.dena-restaurant.com/blog/romantisch-diner-den-haag.html
+- Sizdah Bedar in Den Haag: Vier het Perzische Natuurfeest bij DENA's — https://www.dena-restaurant.com/blog/sizdah-bedar-den-haag.html
+- Persian Rice Dishes: Everything You Need to Know — https://www.dena-restaurant.com/blog/persian-rice-dishes.html
+- Perzisch eten in Zuid-Holland: waar vind je het? — https://www.dena-restaurant.com/blog/perzisch-eten-zuid-holland.html
 
 ## Pages
 
-- Homepage: https://dena-restaurant.com/
-- Woensdag Buffet: https://dena-restaurant.com/woensdag-buffet.html
-- Menu: https://dena-restaurant.com/menu.html
-- Our Story: https://dena-restaurant.com/story.html
-- Catering: https://dena-restaurant.com/catering.html
-- Contact: https://dena-restaurant.com/contact.html
-- Blog: https://dena-restaurant.com/blog/index.html
+- Homepage: https://www.dena-restaurant.com/
+- Menu: https://www.dena-restaurant.com/menu.html
+- Our Story: https://www.dena-restaurant.com/story.html
+- Catering: https://www.dena-restaurant.com/catering.html
+- Contact: https://www.dena-restaurant.com/contact.html
+- Blog: https://www.dena-restaurant.com/blog/index.html

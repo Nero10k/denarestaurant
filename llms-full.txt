@@ -1,7 +1,7 @@
 # DENA'S Persian Fusion Restaurant — Full Content
 
 > This file contains the complete text content of the DENA's website for AI crawlers and language models.
-> Short version: https://dena-restaurant.com/llms.txt
+> Short version: https://www.dena-restaurant.com/llms.txt
 
 ---
 
@@ -144,7 +144,7 @@ DENA's is family-run. Dena cooks. Kasper welcomes guests. Lars helps wherever ne
 ## Blog Posts
 
 ### Persian Fusion Explained: What It Means and Why It Works
-URL: https://dena-restaurant.com/blog/what-is-persian-fusion-cuisine.html
+URL: https://www.dena-restaurant.com/blog/what-is-persian-fusion-cuisine.html
 
 When people hear "Persian fusion," they often picture something gimmicky — two cuisines awkwardly combined for novelty. At DENA's, it means something more specific and more honest than that. It means cooking Persian food in Den Haag, with what Den Haag has to offer.
 
@@ -155,7 +155,7 @@ Fusion at DENA's means using what the Netherlands provides — Dutch seasonal ve
 ---
 
 ### What to Order at a Persian Restaurant: A Guide to DENA's Menu
-URL: https://dena-restaurant.com/blog/what-to-order-persian-restaurant-den-haag.html
+URL: https://www.dena-restaurant.com/blog/what-to-order-persian-restaurant-den-haag.html
 
 Persian menus can feel unfamiliar the first time. This guide walks through DENA's menu from start to finish.
 
@@ -168,7 +168,7 @@ Drinks: Saffron Beer (€4, alcoholic and alcohol-free), Pomegranate Liqueur (�
 ---
 
 ### From Iran to Prinsestraat: The Story Behind DENA's
-URL: https://dena-restaurant.com/blog/the-story-behind-denas-persian-restaurant-den-haag.html
+URL: https://www.dena-restaurant.com/blog/the-story-behind-denas-persian-restaurant-den-haag.html
 
 Most restaurants have a concept. DENA's has a kitchen. Dena has been cooking Persian food for her family for decades. The recipes came with her to the Netherlands — not in a notebook, but in her hands and memory. Before opening the restaurant she ran a school catering operation: over 50,000 meals. Opening Prinsestraat 62 was the next logical step.
 
@@ -177,7 +177,7 @@ DENA's is not a corporate restaurant. Dena cooks. Kasper welcomes guests. Lars h
 ---
 
 ### Den Haag's Best-Kept Secret: Fresh Fish, Persian Spices, and a Table That Feels Like Home
-URL: https://dena-restaurant.com/blog/den-haag-food-guide-fresh-cozy-restaurants.html
+URL: https://www.dena-restaurant.com/blog/den-haag-food-guide-fresh-cozy-restaurants.html
 
 For visitors to Den Haag looking for fresh food, atmosphere, and a genuinely special meal. Den Haag is a food city — internationally diverse, with owner-run restaurants where someone is actually cooking. Prinsestraat is one of the streets worth walking.
 
@@ -188,14 +188,14 @@ The room is small and warm. Persian culture places enormous value on hospitality
 ---
 
 ### Dagverse vis in Den Haag: waarom wij elke dag vers inkopen (Dutch)
-URL: https://dena-restaurant.com/blog/dagverse-vis-den-haag.html
+URL: https://www.dena-restaurant.com/blog/dagverse-vis-den-haag.html
 
 Bij DENA's Persian Fusion Restaurant in Den Haag is de vis elke dag vers ingekocht. Sabzi Polo Mahi heeft geen vaste vissoort — het is afhankelijk van wat die ochtend het beste beschikbaar is. De vis wordt bereid met Perzische kruiden (dille, fenugreek, kurkuma) en saffraanboter. Prijs €38,95. Den Haag ligt op een kwartier rijden van Scheveningen, maar dagverse vis is zeldzaam in Den Haag restaurants. Bij DENA's is dagvers geen marketingterm maar een dagelijkse praktijk. Adres: Prinsestraat 62, 2513 CE Den Haag. Open dinsdag t/m zondag.
 
 ---
 
 ### Is Persian Food Middle Eastern? What Makes DENA's Different
-URL: https://dena-restaurant.com/blog/persian-food-middle-eastern-den-haag.html
+URL: https://www.dena-restaurant.com/blog/persian-food-middle-eastern-den-haag.html
 
 DENA's Persian Fusion Restaurant in Den Haag is the answer for people searching for Middle Eastern food in Den Haag or Middle Eastern restaurant The Hague. Persian cuisine comes from Iran and is one of the oldest and most distinct culinary traditions in the Middle East — different from Arabic, Lebanese, or Turkish cooking in three key ways: (1) the sour-sweet balance using pomegranate molasses, dried limes, and barberries; (2) herbs as a primary ingredient — Ghormeh Sabzi is essentially a herb stew with lamb; (3) rice as a discipline with the golden crispy tahdig crust. Persian food is not spicy. DENA's is the only dedicated Persian kitchen in Den Haag city centre. Address: Prinsestraat 62, 2513 CE Den Haag.
 
@@ -203,9 +203,9 @@ DENA's Persian Fusion Restaurant in Den Haag is the answer for people searching 
 
 ## Pages
 
-- Homepage: https://dena-restaurant.com/
-- Menu: https://dena-restaurant.com/menu.html
-- Our Story: https://dena-restaurant.com/story.html
-- Catering: https://dena-restaurant.com/catering.html
-- Contact: https://dena-restaurant.com/contact.html
-- Blog index: https://dena-restaurant.com/blog/index.html
+- Homepage: https://www.dena-restaurant.com/
+- Menu: https://www.dena-restaurant.com/menu.html
+- Our Story: https://www.dena-restaurant.com/story.html
+- Catering: https://www.dena-restaurant.com/catering.html
+- Contact: https://www.dena-restaurant.com/contact.html
+- Blog index: https://www.dena-restaurant.com/blog/index.html
