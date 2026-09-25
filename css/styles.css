@@ -232,15 +232,17 @@ p {
 .nav {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  gap: 1.5rem;
 }
 
 .nav-links {
   display: flex;
-  gap: var(--spacing-md);
+  gap: 1.25rem;
 }
 
 .nav-links a {
+  display: inline-block; /* so the ::after underline spans the full link */
+  white-space: nowrap;
   color: var(--color-text-light);
   font-weight: 500;
   padding: 0.5rem;
@@ -266,6 +268,11 @@ p {
 .nav-cta {
   display: flex;
   gap: var(--spacing-sm);
+}
+
+.nav-cta .btn {
+  white-space: nowrap;
+  padding: 0.6rem 1.1rem;
 }
 
 .mobile-menu-btn {
@@ -1060,7 +1067,9 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+/* Collapse the header into the hamburger menu as soon as the full nav
+   (8 links + 2 buttons) no longer fits on one line. */
+@media (max-width: 1150px) {
 
   /* Anchor for the dropdown panel */
   .header .container {
@@ -1140,6 +1149,18 @@ section {
     text-align: center;
     padding: 0.85rem 1rem;
   }
+
+  /* Keep the close (✕) button exactly where the ☰ was, top right of the
+     header, instead of dropping to the bottom of the open panel. The panel
+     starts right below the 40px header row, so -40px lines it back up. */
+  .nav.active .mobile-menu-btn {
+    position: absolute;
+    top: -40px;
+    right: var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
 
   .hero {
     min-height: 80vh;
