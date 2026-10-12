@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', function() {
 /**
  * Floating Call Button
  * Injected on every page so guests can call to reserve or ask questions
- * with a single tap. The line is answered 24/7.
+ * with a single tap.
  */
 function initCallButton() {
   if (document.querySelector('.call-fab')) return;
 
-  var DISPLAY_NUMBER = '070 207 1479';
-  var DIAL_NUMBER = '+31702071479';
+  var DISPLAY_NUMBER = '06 27481111';
+  var DIAL_NUMBER = '+31627481111';
 
   // Button copy follows the page language (<html lang="nl"> on Dutch pages).
   var isDutch = (document.documentElement.lang || '').toLowerCase().indexOf('nl') === 0;
